@@ -1,0 +1,45 @@
+---
+title: "オンライン機械学習 勉強会"
+date: "`r format(Sys.time(),'%Y/%m/%d')`"
+output:
+  revealjs::revealjs_presentation:
+    reveal_option:
+      slideNumber: true
+      center: true
+    #pandoc_args: [
+    #  '--from', 'markdown+autolink_bare_uris+tex_math_single_backslash-implicit_figures'
+    #]
+    self_contained: false
+    theme: sky
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(revealjs)
+library(ggplot2)
+library(dplyr)
+```
+
+
+#やったこと
+
+```{r}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) +
+  geom_point()
+```
+
+# ほが
+
+## ほがほが
+
+ほげほげほげ。
+
+
+
+## ふたつめの図
+
+```{r}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width)) +
+  geom_point()
+```
+© 2020 GitHub, Inc.
